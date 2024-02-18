@@ -1,0 +1,99 @@
+@@include('header.htm') @@include('blocks/nav.htm')
+@@include('blocks/page-title.htm', { "title": "Get in Touch", "description":
+"Contact us anytime and we'll get back to you within 24 hours." })
+<!-- contact form start -->
+<section class="contact section">
+  <div class="container">
+    <div class="row pb-5">
+      <div class="col-lg-6 mb-4 mb-lg-0 col-md-6 text-center">
+        <h4>Office Address</h4>
+        <p>1234 Dreams Lane <br />Charlotte, NC 28269</p>
+      </div>
+      <div class="col-lg-6 mb-lg-0 col-md-6 text-center">
+        <h4>Contact</h4>
+        <p class="mb-0">info@taiio.inc</p>
+        <p class="mb-0">+1 (828) 667-3322</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center mb-5 contact-title">
+          <h2>Talk To Us</h2>
+        </div>
+
+        <form
+          id="contact-form"
+          class="contact__form mt-5"
+          method="post"
+          action="mail.php"
+        >
+          <!-- form message -->
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="alert alert-success contact__msg"
+                style="display: none"
+                role="alert"
+              >
+                Your message was sent successfully.
+              </div>
+            </div>
+          </div>
+          <!-- end message -->
+          <div class="form-row">
+            <div class="col-lg-12">
+              <div class="form-group mb-3">
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Full Name"
+                />
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group mb-3">
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group mb-3">
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Subject"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="form-group-2 mb-4">
+                <textarea
+                  name="message"
+                  class="form-control"
+                  rows="6"
+                  placeholder="Enter Your Mesaage..."
+                ></textarea>
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-main" name="submit" type="submit">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('blocks/footer.htm') @@include('footer.htm')
