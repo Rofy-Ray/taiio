@@ -1,0 +1,17 @@
+@@include('header.htm')
+@@include('blocks/nav.htm')
+
+@@include('blocks/page-title.htm', { "title": "In the Blog", "description": "Check out our latest blog posts and stay up-to-date with the latest news and trends in the industry." })
+
+<section class="section blog-post">
+  <div class="container">
+    <div class="row">
+      @@include('blocks/grid-posts.htm')
+    </div>
+
+    @@include('blocks/post-nav.htm')
+  </div>
+</section>
+
+@@include('blocks/footer.htm')
+@@include('footer.htm')
